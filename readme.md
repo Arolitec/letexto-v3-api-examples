@@ -1,6 +1,6 @@
 ### Postman
 
-[Download postman json](https://https://github.com/Arolitec/letexto-v3-api-examples/blob/main/postman/LeTexto Client API.postman_collection.json)
+[Postman](https://https://github.com/Arolitec/letexto-v3-api-examples/blob/main/postman/LeTexto Client API.postman_collection.json)
 
 ### send campaign
 
