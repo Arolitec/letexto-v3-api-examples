@@ -10,7 +10,7 @@
 
 [python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/create_campaign.py)
 
-[js](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/create_campaign.js)
+[javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/create_campaign.js)
 
 [java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/create_campaign.java)
 
@@ -22,7 +22,7 @@
 
 [python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/create_campaign.py)
 
-[js](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/create_campaign.js)
+[javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/create_campaign.js)
 
 [java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/create_campaign.java)
 
@@ -34,6 +34,6 @@
 
 [python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/get_campaign_status.py)
 
-[js](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/get_campaign_status.js)
+[javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/get_campaign_status.js)
 
 [java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/get_campaign_status.java)
