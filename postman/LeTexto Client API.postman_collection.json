@@ -1,113 +1,148 @@
 {
-  "info": {
-    "_postman_id": "cd2b1da4-bcac-4376-a1fc-afe6f02f63d6",
-    "name": "LeTexto Client API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
-  },
-  "item": [
-    {
-      "name": "Send single Message",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "http://localhost:3333/v1/messages/send?from=SMS INFO&to=22505857433&content=Hello API!&username=TR_c20c7c0742&password=1ad05b50&dlrUrl=https://mydomain.com:4444/dlr&dlrMethod=GET&customData=customData&sendAt=2023-02-13T21:40:00.000Z",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
-          "path": ["v1", "messages", "send"],
-          "query": [
-            {
-              "key": "from",
-              "value": "SMS INFO"
-            },
-            {
-              "key": "to",
-              "value": "22505857433"
-            },
-            {
-              "key": "content",
-              "value": "Hello API!"
-            },
-            {
-              "key": "username",
-              "value": "TR_c20c7c0742"
-            },
-            {
-              "key": "password",
-              "value": "1ad05b50"
-            },
-            {
-              "key": "dlrUrl",
-              "value": "https://mydomain.com:4444/dlr"
-            },
-            {
-              "key": "dlrMethod",
-              "value": "GET"
-            },
-            {
-              "key": "customData",
-              "value": "customData"
-            },
-            {
-              "key": "sendAt",
-              "value": "2023-02-13T21:40:00.000Z"
-            }
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Create Campaign",
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": {
-            "token": "dc408be00542eed70f4e7d1336d9a38735e5fa74"
-          }
-        },
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"label\": \"My Campaign publipostage\",\n    \"sender\": \"user 3TEC\",\n    \"contacts\": [\n        {\"age\": \"12\", \"numero\": \"225747189171\", \"name\": \"user 1\"},\n        {\"age\": \"24\", \"numero\": \"225070861918\", \"name\": \"user 2\"},\n        {\"age\": \"32\", \"numero\": \"225076825212\", \"name\": \"user 3tec\"}\n    ],\n    \"content\": \"Hello {{name}}, votre numéro est {{numero}}\"\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": "http://localhost:3333/v1/campaigns"
-      },
-      "response": []
-    },
-    {
-      "name": "Get Campaign Status",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": {
-            "token": "dc408be00542eed70f4e7d1336d9a38735e5fa74"
-          }
-        },
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"label\": \"My Campaign 3\",\n    \"sender\": \"user 3TEC\",\n    \"contacts\": [\n        {\"age\": \"12\", \"numero\": \"2250747189171\", \"name\": \"user 1\"},\n        {\"age\": \"24\", \"numero\": \"2250708651918\", \"name\": \"user 2\"},\n        {\"age\": \"32\", \"numero\": \"2250768275212\", \"name\": \"user 3tec\"}\n    ],\n    \"content\": \"Hello {{name}}, votre numéro est {{numero}}\"\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": "http://localhost:3333/v1/campaigns/1/status"
-      },
-      "response": []
-    }
-  ]
+	"info": {
+		"_postman_id": "677b6a0c-5b2c-498d-8f7b-a9698ef5cd2a",
+		"name": "LeTexto Client API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28063742"
+	},
+	"item": [
+		{
+			"name": "Send single Message",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/v1/messages/send?from=SMS INFO&to=22505857433&content=Hello API!&token=a12yhu5847ejuell458222ed&dlrUrl=https://mydomain.com:4444/dlr&dlrMethod=GET&customData=customData&sendAt=2023-02-13T21:40:00.000Z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"v1",
+						"messages",
+						"send"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "SMS INFO"
+						},
+						{
+							"key": "to",
+							"value": "22505857433"
+						},
+						{
+							"key": "content",
+							"value": "Hello API!"
+						},
+						{
+							"key": "token",
+							"value": "a12yhu5847ejuell458222ed"
+						},
+						{
+							"key": "dlrUrl",
+							"value": "https://mydomain.com:4444/dlr"
+						},
+						{
+							"key": "dlrMethod",
+							"value": "GET"
+						},
+						{
+							"key": "customData",
+							"value": "customData"
+						},
+						{
+							"key": "sendAt",
+							"value": "2023-02-13T21:40:00.000Z"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Campaign",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "dc408be00542eed70f4e7d1336d9a38735e5fa74",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"label\": \"My Campaign publipostage\",\n    \"sender\": \"user 3TEC\",\n    \"contacts\": [\n        {\"age\": \"12\", \"numero\": \"225747189171\", \"name\": \"user 1\"},\n        {\"age\": \"24\", \"numero\": \"225070861918\", \"name\": \"user 2\"},\n        {\"age\": \"32\", \"numero\": \"225076825212\", \"name\": \"user 3tec\"}\n    ],\n    \"content\": \"Hello {{name}}, votre numéro est {{numero}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/v1/campaigns",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"v1",
+						"campaigns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Campaign Status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "dc408be00542eed70f4e7d1336d9a38735e5fa74",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"label\": \"My Campaign 3\",\n    \"sender\": \"user 3TEC\",\n    \"contacts\": [\n        {\"age\": \"12\", \"numero\": \"2250747189171\", \"name\": \"user 1\"},\n        {\"age\": \"24\", \"numero\": \"2250708651918\", \"name\": \"user 2\"},\n        {\"age\": \"32\", \"numero\": \"2250768275212\", \"name\": \"user 3tec\"}\n    ],\n    \"content\": \"Hello {{name}}, votre numéro est {{numero}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/v1/campaigns/1/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"v1",
+						"campaigns",
+						"1",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
 }
