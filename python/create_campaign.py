@@ -1,9 +1,9 @@
-#replace with your own values
+# Replace with your own values
 
-import http.client
+import requests
 import json
 
-conn = http.client.HTTPSConnection("localhost", 3333)
+url = "<REPLACE_WITH_PROD_URL>/v1/campaigns"
 payload = json.dumps({
   "label": "My Campaign publipostage",
   "sender": "AROLITEC",
@@ -27,10 +27,10 @@ payload = json.dumps({
   "content": "Hello {{name}}, votre numéro est {{numero}}"
 })
 headers = {
-  'Authorization': 'Bearer dc408be00542eed70f4e7d1336d9a38735e5fa74',
+  'Authorization': 'Bearer <YOUR_TOKEN>',
   'Content-Type': 'application/json'
 }
-conn.request("POST", "/v1/campaigns", payload, headers)
-res = conn.getresponse()
-data = res.read()
-print(data.decode("utf-8"))
+
+response = requests.post(url, data=payload, headers=headers)
+data = response.json()
+print(json.dumps(data))

@@ -1,22 +1,22 @@
-//replace with your own values
-//AXIOS VERSION
-//install axios first => npm install axios
+const url = "<REPLACE_WITH_PROD_URL>/v1/campaigns/1/status";
+const token = "<YOUR_TOKEN>";
 
-var axios = require("axios");
+const fetchData = async () => {
+  try {
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+    });
 
-var config = {
-  method: "get",
-  url: "http://localhost:3333/v1/campaigns/1/status",
-  headers: {
-    Authorization: "Bearer dc408be00542eed70f4e7d1336d9a38735e5fa74",
-    "Content-Type": "application/json",
-  },
+    const data = await response.json();
+    console.log(JSON.stringify(data));
+  } catch (error) {
+    console.log(error);
+  }
 };
 
-axios(config)
-  .then(function (response) {
-    console.log(JSON.stringify(response.data));
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+fetchData();
+

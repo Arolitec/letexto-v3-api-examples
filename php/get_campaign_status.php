@@ -1,9 +1,20 @@
 <?php
+// GUZZLE
+// Make sure to install Guzzle using Composer: composer require guzzlehttp/guzzle
+
+use GuzzleHttp\Client;
+use GuzzleHttp\Psr7\Request;
+
+// Replace the following values with your own
+$prodUrl = '<REPLACE_WITH_PROD_URL>';
+$token = '<YOUR_TOKEN>';
+
 $client = new Client();
 $headers = [
-  'Authorization' => 'Bearer dc408be00542eed70f4e7d1336d9a38735e5fa74'
+    'Authorization' => 'Bearer ' . $token
 ];
 $body = '';
-$request = new Request('GET', 'http://localhost:3333/v1/campaigns/1/status', $headers, $body);
+$request = new Request('GET', $prodUrl . '/v1/campaigns/1/status', $headers, $body);
 $res = $client->sendAsync($request)->wait();
 echo $res->getBody();
+

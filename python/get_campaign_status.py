@@ -1,13 +1,10 @@
-#replace with your own values
+import requests
 
-import http.client
-
-conn = http.client.HTTPSConnection("localhost", 3333)
-payload = ''
+url = "<REPLACE_WITH_PROD_URL>/v1/campaigns/1/status"
 headers = {
-  'Authorization': 'Bearer dc408be00542eed0f4e7d1336d9a38735e5fa74'
+  'Authorization': 'Bearer <YOUR_TOKEN>'
 }
-conn.request("GET", "/v1/campaigns/1/status", payload, headers)
-res = conn.getresponse()
-data = res.read()
-print(data.decode("utf-8"))
+
+response = requests.get(url, headers=headers)
+data = response.content.decode("utf-8")
+print(data)

@@ -1,12 +1,22 @@
-//replace with your own values
+import okhttp3.*;
 
-OkHttpClient client = new OkHttpClient().newBuilder()
-  .build();
-MediaType mediaType = MediaType.parse("text/plain");
-RequestBody body = RequestBody.create(mediaType, "");
-Request request = new Request.Builder()
-  .url("http://localhost:3333/v1/campaigns/1/status")
-  .method("GET", body)
-  .addHeader("Authorization", "Bearer dc408be00542eed70f4e7d1336d9a38735e5fa74")
-  .build();
-Response response = client.newCall(request).execute();
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        OkHttpClient client = new OkHttpClient().newBuilder().build();
+
+        MediaType mediaType = MediaType.parse("text/plain");
+        RequestBody body = RequestBody.create(mediaType, "");
+
+        Request request = new Request.Builder()
+                .url("<REPLACE_WITH_PROD_URL>/v1/campaigns/1/status")
+                .method("GET", body)
+                .addHeader("Authorization", "Bearer <YOUR_TOKEN>")
+                .build();
+
+        Response response = client.newCall(request).execute();
+        String responseBody = response.body().string();
+        System.out.println(responseBody);
+    }
+}
