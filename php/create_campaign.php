@@ -1,6 +1,3 @@
-<!--php GUZZLE-->
-<!--replace with your own values-->
-
 <?php
 // GUZZLE
 // Make sure to install Guzzle using Composer: composer require guzzlehttp/guzzle

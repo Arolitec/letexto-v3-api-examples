@@ -1,5 +1,3 @@
-# Replace with your own values
-
 import requests
 import json
 
