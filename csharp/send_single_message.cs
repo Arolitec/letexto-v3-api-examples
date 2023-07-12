@@ -1,6 +1,6 @@
 string apiUrl = "<REPLACE_WITH_PROD_URL>/v1/messages/send";
 string from = "SMS INFO";
-string to = "2250585743342";
+string to = "22500000000000";
 string content = "Hello API!";
 string token = "<YOUR_TOKEN>";
 string dlrUrl = "https://mydomain.com:4444/dlr";

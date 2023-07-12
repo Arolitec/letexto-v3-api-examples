@@ -9,7 +9,7 @@ use GuzzleHttp\Psr7\Request;
 $prodUrl = '<REPLACE_WITH_PROD_URL>';
 $token = '<YOUR_TOKEN>';
 $from = 'SMS INFO';
-$to = '22505874342';
+$to = '2250000000000';
 $content = 'Hello API!';
 $dlrUrl = 'https://mydomain.com:4444/dlr';
 $customData = 'customData';

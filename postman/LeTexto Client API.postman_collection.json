@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3333/v1/messages/send?from=SMS INFO&to=22505857433&content=Hello API!&token=a12yhu5847ejuell458222ed&dlrUrl=https://mydomain.com:4444/dlr&dlrMethod=GET&customData=customData&sendAt=2023-02-13T21:40:00.000Z",
+					"raw": "http://localhost:3333/v1/messages/send?from=SMS INFO&to=2250000000000&content=Hello API!&token=a12yhu5847ejuell458222ed&dlrUrl=https://mydomain.com:4444/dlr&dlrMethod=GET&customData=customData&sendAt=2023-02-13T21:40:00.000Z",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -30,7 +30,7 @@
 						},
 						{
 							"key": "to",
-							"value": "22505857433"
+							"value": "2250000000000"
 						},
 						{
 							"key": "content",
@@ -78,7 +78,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"label\": \"My Campaign publipostage\",\n    \"sender\": \"user 3TEC\",\n    \"contacts\": [\n        {\"age\": \"12\", \"numero\": \"225747189171\", \"name\": \"user 1\"},\n        {\"age\": \"24\", \"numero\": \"225070861918\", \"name\": \"user 2\"},\n        {\"age\": \"32\", \"numero\": \"225076825212\", \"name\": \"user 3tec\"}\n    ],\n    \"content\": \"Hello {{name}}, votre numéro est {{numero}}\"\n}",
+					"raw": "{\n    \"label\": \"My Campaign publipostage\",\n    \"sender\": \"user 3TEC\",\n    \"contacts\": [\n        {\"age\": \"12\", \"numero\": \"2250000000000\", \"name\": \"user 1\"},\n        {\"age\": \"24\", \"numero\": \"2250000000000\", \"name\": \"user 2\"},\n        {\"age\": \"32\", \"numero\": \"2250000000000\", \"name\": \"user 3tec\"}\n    ],\n    \"content\": \"Hello {{name}}, votre numéro est {{numero}}\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -120,7 +120,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"label\": \"My Campaign 3\",\n    \"sender\": \"user 3TEC\",\n    \"contacts\": [\n        {\"age\": \"12\", \"numero\": \"2250747189171\", \"name\": \"user 1\"},\n        {\"age\": \"24\", \"numero\": \"2250708651918\", \"name\": \"user 2\"},\n        {\"age\": \"32\", \"numero\": \"2250768275212\", \"name\": \"user 3tec\"}\n    ],\n    \"content\": \"Hello {{name}}, votre numéro est {{numero}}\"\n}",
+					"raw": "{\n    \"label\": \"My Campaign 3\",\n    \"sender\": \"user 3TEC\",\n    \"contacts\": [\n        {\"age\": \"12\", \"numero\": \"2250000000000\", \"name\": \"user 1\"},\n        {\"age\": \"24\", \"numero\": \"2250000000000\", \"name\": \"user 2\"},\n        {\"age\": \"32\", \"numero\": \"2250000000000\", \"name\": \"user 3tec\"}\n    ],\n    \"content\": \"Hello {{name}}, votre numéro est {{numero}}\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"

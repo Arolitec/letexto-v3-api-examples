@@ -1,7 +1,7 @@
 const prodUrl = "<REPLACE_WITH_PROD_URL>";
 const token = "<YOUR_TOKEN>";
 
-const url = encodeURI(`${prodUrl}/v1/messages/send?from=SMS INFO&to=225058543342&content=Hello API!&token=${token}&dlrUrl=https://mydomain.com:4444/dlr&dlrMethod=GET&customData=customData&sendAt=2023-02-13T21:40:00.000Z`);
+const url = encodeURI(`${prodUrl}/v1/messages/send?from=SMS INFO&to=2250000000000&content=Hello API!&token=${token}&dlrUrl=https://mydomain.com:4444/dlr&dlrMethod=GET&customData=customData&sendAt=2023-02-13T21:40:00.000Z`);
 
 const fetchData = async () => {
   try {

@@ -10,9 +10,9 @@ Dim body As String = "{" & vbCrLf &
 "    ""label"": ""My Campaign publipostage""," & vbCrLf &
 "    ""sender"": ""SMS INFO""," & vbCrLf &
 "    ""contacts"": [" & vbCrLf &
-"        {""age"": ""12"", ""numero"": ""225074718911"", ""name"": ""Martial""}," & vbCrLf &
-"        {""age"": ""24"", ""numero"": ""225070865198"", ""name"": ""Rita""}," & vbCrLf &
-"        {""age"": ""32"", ""numero"": ""225076827512"", ""name"": ""Arolitec""}" & vbCrLf &
+"        {""age"": ""12"", ""numero"": ""2250000000000"", ""name"": ""Martial""}," & vbCrLf &
+"        {""age"": ""24"", ""numero"": ""2250000000000"", ""name"": ""Rita""}," & vbCrLf &
+"        {""age"": ""32"", ""numero"": ""2250000000000"", ""name"": ""Arolitec""}" & vbCrLf &
 "    ]," & vbCrLf &
 "    ""content"": ""Hello {{name}}, votre numéro est {{numero}}""" & vbCrLf &
 "}"

@@ -11,7 +11,7 @@ public class Main {
         
         String encodedURL = "<REPLACE_WITH_PROD_URL>/v1/messages/send?from=" +
                 URLEncoder.encode("SMS INFO", "UTF-8") +
-                "&to=22505854342&content=Hello API!&token=<YOUR_TOKEN>&dlrUrl=" +
+                "&to=2250000000000&content=Hello API!&token=<YOUR_TOKEN>&dlrUrl=" +
                 URLEncoder.encode("https://mydomain.com:4444/dlr", "UTF-8") +
                 "&dlrMethod=GET&customData=customData&sendAt=2023-02-13T21:40:00.000Z";
         
