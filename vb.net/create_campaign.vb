@@ -12,7 +12,7 @@ Dim body As String = "{" & vbCrLf &
 "    ""contacts"": [" & vbCrLf &
 "        {""age"": ""12"", ""numero"": ""2250000000000"", ""name"": ""Martial""}," & vbCrLf &
 "        {""age"": ""24"", ""numero"": ""2250000000000"", ""name"": ""Rita""}," & vbCrLf &
-"        {""age"": ""32"", ""numero"": ""2250000000000"", ""name"": ""Arolitec""}" & vbCrLf &
+"        {""age"": ""32"", ""numero"": ""2250000000000"", ""name"": ""John""}" & vbCrLf &
 "    ]," & vbCrLf &
 "    ""content"": ""Hello {{name}}, votre numéro est {{numero}}""" & vbCrLf &
 "}"
