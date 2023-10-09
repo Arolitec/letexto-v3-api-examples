@@ -4,7 +4,7 @@ import json
 url = "<REPLACE_WITH_PROD_URL>/v1/campaigns"
 payload = json.dumps({
   "label": "My Campaign publipostage",
-  "sender": "AROLITEC",
+  "sender": "SMS INFO",
   "contacts": [
     {
       "age": "12",
@@ -19,7 +19,7 @@ payload = json.dumps({
     {
       "age": "32",
       "numero": "2250000000000",
-      "name": "Arolitec"
+      "name": "John"
     }
   ],
   "content": "Hello {{name}}, votre numéro est {{numero}}"

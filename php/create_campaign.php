@@ -16,7 +16,7 @@ $headers = [
 ];
 $body = '{
   "label": "My Campaign publipostage",
-  "sender": "AROLITEC",
+  "sender": "SMS INFO",
   "contacts": [
     {
       "age": "12",
@@ -31,7 +31,7 @@ $body = '{
     {
       "age": "32",
       "numero": "2250000000000",
-      "name": "Arolitec"
+      "name": "John"
     }
   ],
   "content": "Hello {{name}}, votre numéro est {{numero}}"

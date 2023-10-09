@@ -14,7 +14,7 @@ var requestBody = new {
     contacts = new[] {
         new { age = "12", numero = "2250000000000", name = "Martial" },
         new { age = "24", numero = "2250000000000", name = "Rita" },
-        new { age = "32", numero = "2260000000000", name = "Arolitec" }
+        new { age = "32", numero = "2260000000000", name = "John" }
     },
     content = "Hello {{name}}, votre numéro est {{numero}}"
 };
