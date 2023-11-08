@@ -1,7 +1,7 @@
 string prodUrl = "<REPLACE_WITH_PROD_URL>";
 string token = "<YOUR_TOKEN>";
 
-var client = new RestClient($"{prodUrl}/v1/campaigns");
+var client = new RestClient($"{prodUrl}/v1/senders/create");
 client.Timeout = -1;
 
 var request = new RestRequest(Method.POST);
