@@ -1,13 +1,10 @@
-const url = '<REPLACE_WITH_PROD_URL>/v1/users/balance'
-const token = '<YOUR_TOKEN>'
+const url =
+  '<REPLACE_WITH_PROD_URL>/v1/users/balance?token=<REPLACE_WITH_YOUR_MESSAGE_ID>'
 
 const fetchData = async () => {
   try {
     const response = await fetch(url, {
       method: 'GET',
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
     })
 
     const data = await response.json()
