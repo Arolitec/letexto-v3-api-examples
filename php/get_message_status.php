@@ -11,10 +11,7 @@ $token = '<YOUR_TOKEN>';
 $messageId = '<YOUR_MESSAGE_ID>';
 
 $client = new Client();
-$headers = [
-    'Authorization' => 'Bearer ' . $token
-];
 $body = '';
-$request = new Request('GET', $prodUrl . '/v1/message/'+ $messageId +'/status', $headers, $body);
+$request = new Request('GET', $prodUrl . '/v1/message/'+ $messageId +'/status?token=' + $token, $headers, $body);
 $res = $client->sendAsync($request)->wait();
 echo $res->getBody();

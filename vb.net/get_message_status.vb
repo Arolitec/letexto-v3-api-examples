@@ -1,8 +1,7 @@
-Dim client As New RestClient("<REPLACE_WITH_PROD_URL>/v1/message/<REPLACE_WITH_YOUR_MESSAGE_ID>/status")
+Dim client As New RestClient("<REPLACE_WITH_PROD_URL>/v1/message/<REPLACE_WITH_YOUR_MESSAGE_ID>/status?token=<YOUR TOKEN>")
 client.Timeout = -1
 
 Dim request As New RestRequest(Method.GET)
-request.AddHeader("Authorization", "Bearer dc408be00542eed70f4e7d1336d9a38735e5fa74")
 
 Dim body As String = ""
 request.AddParameter("text/plain", body, ParameterType.RequestBody)
