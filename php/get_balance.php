@@ -10,11 +10,9 @@ $prodUrl = '<REPLACE_WITH_PROD_URL>';
 $token = '<YOUR_TOKEN>';
 
 $client = new Client();
-$headers = [
-    'Authorization' => 'Bearer ' . $token
-];
+
 $body = '';
-$request = new Request('GET', $prodUrl . '/v1/users/balance', $headers, $body);
+$request = new Request('GET', $prodUrl . '/v1/users/balance?token=<REPLACE_WITH_YOUR_MESSAGE_ID>', $headers, $body);
 $res = $client->sendAsync($request)->wait();
 echo $res->getBody();
 
