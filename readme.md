@@ -14,17 +14,21 @@
 
 [java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/create_campaign.java)
 
-### create campaign
+[vb.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/create_campaign.vb)
 
-[c#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/create_campaign.cs)
+### send single message
 
-[php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php/create_campaign.php)
+[c#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/send_single_message.cs)
 
-[python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/create_campaign.py)
+[php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php/send_single_message.php)
 
-[javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/create_campaign.js)
+[python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/send_single_message.py)
 
-[java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/create_campaign.java)
+[javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/send_single_message.js)
+
+[java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/send_single_message.java)
+
+[vb.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/send_single_message.vb)
 
 ### get campaign status
 
@@ -37,3 +41,47 @@
 [javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/get_campaign_status.js)
 
 [java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/get_campaign_status.java)
+
+[vb.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/get_campaign_status.vb)
+
+### get message status
+
+[c#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/get_message_status.cs)
+
+[php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php/get_message_status.php)
+
+[python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/get_message_status.py)
+
+[javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/get_message_status.js)
+
+[java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/get_message_status.java)
+
+[vb.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/get_message_status.vb)
+
+### create sender
+
+[c#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/create_sender.cs)
+
+[php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php/create_sender.php)
+
+[python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/create_sender.py)
+
+[javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/create_sender.js)
+
+[java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/create_sender.java)
+
+[vb.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/create_sender.vb)
+
+### get balance
+
+[c#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/get_balance.cs)
+
+[php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php/get_balance.php)
+
+[python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/get_balance.py)
+
+[javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/get_balance.js)
+
+[java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/get_balance.java)
+
+[vb.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/get_balance.vb)
