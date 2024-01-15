@@ -16,7 +16,13 @@ $customData = 'customData';
 $sendAt = '2023-02-13T21:40:00.000Z';
 
 $client = new Client();
-$url = $prodUrl . '/v1/messages/send?from=' . urlencode($from) . '&to=' . $to . '&content=' . urlencode($content) . '&token=' . $token . '&dlrUrl=' . urlencode($dlrUrl) . '&dlrMethod=GET&customData=' . $customData . '&sendAt=' . urlencode($sendAt);
+
+$url = $prodUrl . '/v1/messages/send?from=' . urlencode($from) .
+    '&to=' . $to . '&content=' . urlencode($content) .
+    '&token=' . $token . '&dlrUrl=' . urlencode($dlrUrl) .
+    '&dlrMethod=GET&customData=' . $customData .
+    '&sendAt=' . urlencode($sendAt);
+
 $request = new Request('GET', $url);
 $res = $client->sendAsync($request)->wait();
 echo $res->getBody();
