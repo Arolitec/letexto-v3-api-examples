@@ -6,7 +6,9 @@
 
 [C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/create_campaign.cs)
 
-[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php/create_campaign.php)
+[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+- [cURL](./php/curl/create_campaign.php)
+- [Guzzle](./php/guzzle/create_campaign.php)
 
 [Python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/create_campaign.py)
 
@@ -20,7 +22,9 @@
 
 [C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/send_single_message.cs)
 
-[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php/send_single_message.php)
+[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+- [cURL](./php/curl/send_single_message.php)
+- [Guzzle](./php/guzzle/send_single_message.php)
 
 [Python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/send_single_message.py)
 
@@ -34,7 +38,9 @@
 
 [C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/get_campaign_status.cs)
 
-[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php/get_campaign_status.php)
+[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+- [cURL](./php/curl/get_campaign_status.php)
+- [Guzzle](./php/guzzle/get_campaign_status.php)
 
 [Python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/get_campaign_status.py)
 
@@ -48,7 +54,9 @@
 
 [C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/get_message_status.cs)
 
-[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php/get_message_status.php)
+[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+- [cURL](./php/curl/get_message_status.php)
+- [Guzzle](./php/guzzle/get_message_status.php
 
 [Python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/get_message_status.py)
 
@@ -62,7 +70,9 @@
 
 [C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/create_sender.cs)
 
-[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php/create_sender.php)
+[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+- [cURL](./php/curl/create_sender.php)
+- [Guzzle](./php/guzzle/create_sender.php)
 
 [Python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/create_sender.py)
 
@@ -76,7 +86,9 @@
 
 [C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/get_balance.cs)
 
-[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php/get_balance.php)
+[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+- [cURL](./php/curl/get_balance.php)
+- [Guzzle](./php/guzzle/get_balance.php)
 
 [Python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/get_balance.py)
 
