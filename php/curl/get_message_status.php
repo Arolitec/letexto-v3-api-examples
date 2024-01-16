@@ -9,7 +9,7 @@ $headers = [
     'Content-Type: application/json'
 ];
 
-$ch = curl_init($prodUrl . '/v1/message/' . $messageId . '/status?token=' . $token);
+$ch = curl_init($prodUrl . '/v1/messages/' . $messageId . '/status?token=' . $token);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
