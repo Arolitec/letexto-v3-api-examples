@@ -1,14 +1,12 @@
 <?php
 // Replace the following values with your own
 $prodUrl = '<REPLACE_WITH_PROD_URL>';
-$token = '<YOUR_TOKEN>';
 
 $headers = [
-    'Authorization: Bearer ' . $token,
     'Content-Type: application/json'
 ];
 
-$ch = curl_init($prodUrl . '/v1/users/balance?token=<REPLACE_WITH_YOUR_MESSAGE_ID>');
+$ch = curl_init($prodUrl . '/v1/users/balance?token=<YOUR_TOKEN>');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
