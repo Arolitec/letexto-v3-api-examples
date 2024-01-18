@@ -8,7 +8,7 @@ $headers = [
     'Content-Type: application/json'
 ];
 
-$ch = curl_init($prodUrl . '/v1/campaigns/1/status');
+$ch = curl_init($prodUrl . '/v1/campaigns/sms/<YOUR_MESSAGE_ID>/status');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 

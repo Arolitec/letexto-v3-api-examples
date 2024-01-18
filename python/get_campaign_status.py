@@ -1,6 +1,7 @@
 import requests
 
 url = "<REPLACE_WITH_PROD_URL>/v1/campaigns/sms/<YOUR_CAMPAIGN_ID>/status"
+
 headers = {
   'Authorization': 'Bearer <YOUR_TOKEN>'
 }
