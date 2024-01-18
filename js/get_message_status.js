@@ -1,5 +1,5 @@
 const url =
-  '<REPLACE_WITH_PROD_URL>/v1/message/<YOUR MESSAGE ID>/status?token=<YOUR TOKEN>'
+  '<REPLACE_WITH_PROD_URL>/v1/messages/<YOUR MESSAGE ID>/status?token=<YOUR TOKEN>'
 
 const fetchData = async () => {
   try {
