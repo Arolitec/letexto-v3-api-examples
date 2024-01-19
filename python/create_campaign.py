@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "<REPLACE_WITH_PROD_URL>/v1/campaigns"
+url = "<REPLACE_WITH_PROD_URL>/v1/campaigns/sms"
 payload = json.dumps({
   "label": "My Campaign publipostage",
   "sender": "SMS INFO",
