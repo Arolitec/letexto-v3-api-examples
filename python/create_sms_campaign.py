@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "<REPLACE_WITH_PROD_URL>/v1/campaigns"
+url = "<REPLACE_WITH_PROD_URL>/v1/campaigns/sms"
 payload = json.dumps({
   "label": "My Campaign publipostage",
   "sender": "SMS INFO",
@@ -25,7 +25,7 @@ payload = json.dumps({
   "content": "Hello {{name}}, votre numéro est {{numero}}"
 })
 headers = {
-  'Authorization': 'Bearer <YOUR_TOKEN>',
+  'Authorization': 'Bearer <REPLACE_WITH_YOUR_API_KEY>',
   'Content-Type': 'application/json'
 }
 
