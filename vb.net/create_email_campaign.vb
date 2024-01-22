@@ -1,10 +1,10 @@
-Dim client As New RestClient("<REPLACE_WITH_PROD_URL>/v1/campaigns")
+Dim client As New RestClient("<REPLACE_WITH_PROD_URL>/v1/campaigns/emails")
 
 client.Timeout = -1
 
 Dim request As New RestRequest(Method.POST)
 
-request.AddHeader("Authorization", "Bearer dc408be00542eed70f4e7d1336d9a38735e5fa74")
+request.AddHeader("Authorization", "Bearer <REPLACE_WITH_YOUR_API_KEY>")
 request.AddHeader("Content-Type", "application/json")
 Dim body As String = "{" & vbCrLf &
 "    ""label"": ""My Campaign publipostage""," & vbCrLf &

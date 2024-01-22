@@ -1,4 +1,4 @@
-Dim client As New RestClient("<REPLACE_WITH_PROD_URL>/v1/messages/<REPLACE_WITH_YOUR_MESSAGE_ID>/status?token=<REPLACE_WITH_YOUR_API_KEY>")
+Dim client As New RestClient("<REPLACE_WITH_PROD_URL>/v1/campaigns/emails/<YOUR_CAMPAIGN_ID>/status?token=<REPLACE_WITH_YOUR_API_KEY>")
 client.Timeout = -1
 
 Dim request As New RestRequest(Method.GET)
