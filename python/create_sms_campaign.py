@@ -25,7 +25,7 @@ payload = json.dumps({
   "content": "Hello {{name}}, votre numéro est {{numero}}"
 })
 headers = {
-  'Authorization': 'Bearer <YOUR_TOKEN>',
+  'Authorization': 'Bearer <REPLACE_WITH_YOUR_API_KEY>',
   'Content-Type': 'application/json'
 }
 

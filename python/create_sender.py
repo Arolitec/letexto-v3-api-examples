@@ -6,7 +6,7 @@ payload = json.dumps({
   "name": "My Sender"
 })
 headers = {
-  'Authorization': 'Bearer <YOUR_TOKEN>',
+  'Authorization': 'Bearer <REPLACE_WITH_YOUR_API_KEY>',
   'Content-Type': 'application/json'
 }
 
