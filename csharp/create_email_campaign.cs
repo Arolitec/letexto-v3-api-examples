@@ -1,7 +1,7 @@
 string prodUrl = "<REPLACE_WITH_PROD_URL>";
-string token = "<YOUR_TOKEN>";
+string token = "<REPLACE_WITH_YOUR_API_KEY>";
 
-var client = new RestClient($"{prodUrl}/v1/campaigns");
+var client = new RestClient($"{prodUrl}/v1/campaigns/emails");
 client.Timeout = -1;
 
 var request = new RestRequest(Method.POST);

@@ -1,5 +1,5 @@
 string prodUrl = "<REPLACE_WITH_PROD_URL>";
-string token = "<YOUR_TOKEN>";
+string token = "<REPLACE_WITH_YOUR_API_KEY>";
 string messageId = "your message id";
 
 var client = new RestClient($"{prodUrl}/v1/messages/{messageId}/status?token={token}");
