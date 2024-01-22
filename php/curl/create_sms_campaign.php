@@ -1,7 +1,7 @@
 <?php
 // Replace the following values with your own
 $prodUrl = '<REPLACE_WITH_PROD_URL>';
-$token = '<YOUR_TOKEN>';
+$token = '<REPLACE_WITH_YOUR_API_KEY>';
 
 $headers = [
     'Authorization: Bearer ' . $token,
@@ -30,7 +30,7 @@ $body = '{
   "content": "Hello {{name}}, votre numéro est {{numero}}"
 }';
 
-$ch = curl_init($prodUrl . '/v1/campaigns');
+$ch = curl_init($prodUrl . '/v1/campaigns/sms');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);

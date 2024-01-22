@@ -7,7 +7,7 @@ use GuzzleHttp\Psr7\Request;
 
 // Replace the following values with your own
 $prodUrl = '<REPLACE_WITH_PROD_URL>';
-$token = '<YOUR_TOKEN>';
+$token = '<REPLACE_WITH_YOUR_API_KEY>';
 
 $client = new Client();
 $headers = [
@@ -36,7 +36,7 @@ $body = '{
   ],
   "content": "Hello {{name}}, votre numéro est {{numero}}"
 }';
-$request = new Request('POST', $prodUrl . '/v1/campaigns', $headers, $body);
+$request = new Request('POST', $prodUrl . '/v1/campaigns/sms', $headers, $body);
 $res = $client->sendAsync($request)->wait();
 echo $res->getBody();
 

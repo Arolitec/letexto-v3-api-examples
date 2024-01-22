@@ -1,14 +1,12 @@
 <?php
 // Replace the following values with your own
 $prodUrl = '<REPLACE_WITH_PROD_URL>';
-$token = '<YOUR_TOKEN>';
 
 $headers = [
-    'Authorization: Bearer ' . $token,
     'Content-Type: application/json'
 ];
 
-$ch = curl_init($prodUrl . '/v1/campaigns/sms/<YOUR_MESSAGE_ID>/status');
+$ch = curl_init($prodUrl . '/v1/campaigns/emails/<YOUR_MESSAGE_ID>/status?token=<REPLACE_WITH_YOUR_API_KEY>');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 

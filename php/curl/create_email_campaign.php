@@ -8,10 +8,29 @@ $headers = [
     'Content-Type: application/json'
 ];
 $body = '{
-  "name": "My Sender"
+  "label": "My Campaign publipostage",
+  "sender": "SMS INFO",
+  "contacts": [
+    {
+      "age": "12",
+      "numero": "2250000000000",
+      "name": "Martial"
+    },
+    {
+      "age": "24",
+      "numero": "2250000000000",
+      "name": "Rita"
+    },
+    {
+      "age": "32",
+      "numero": "2250000000000",
+      "name": "John"
+    }
+  ],
+  "content": "Hello {{name}}, votre numéro est {{numero}}"
 }';
 
-$ch = curl_init($prodUrl . '/v1/senders/create');
+$ch = curl_init($prodUrl . '/v1/campaigns/emails');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);

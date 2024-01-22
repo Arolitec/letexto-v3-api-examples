@@ -6,7 +6,7 @@ $headers = [
     'Content-Type: application/json'
 ];
 
-$ch = curl_init($prodUrl . '/v1/users/balance?token=<YOUR_TOKEN>');
+$ch = curl_init($prodUrl . '/v1/users/balance?token=<REPLACE_WITH_YOUR_API_KEY>');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
