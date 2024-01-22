@@ -1,6 +1,6 @@
 import requests
 
-url = "<REPLACE_WITH_PROD_URL>/v1/campaigns/email/<YOUR_CAMPAIGN_ID>/status?token=<REPLACE_WITH_YOUR_API_KEY>"
+url = "<REPLACE_WITH_PROD_URL>/v1/campaigns/emails/<YOUR_CAMPAIGN_ID>/status?token=<REPLACE_WITH_YOUR_API_KEY>"
 
 headers = {}
 
