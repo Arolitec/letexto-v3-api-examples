@@ -1,5 +1,5 @@
 string prodUrl = "<REPLACE_WITH_PROD_URL>";
-string token = "<YOUR_TOKEN>";
+string token = "<REPLACE_WITH_YOUR_API_KEY>";
 
 var client = new RestClient($"{prodUrl}/v1/senders/create");
 client.Timeout = -1;

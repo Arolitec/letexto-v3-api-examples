@@ -1,7 +1,7 @@
 <?php
 // Replace the following values with your own
 $prodUrl = '<REPLACE_WITH_PROD_URL>';
-$token = '<YOUR_TOKEN>';
+$token = '<REPLACE_WITH_YOUR_API_KEY>';
 $messageId = '<YOUR_MESSAGE_ID>';
 
 $headers = [

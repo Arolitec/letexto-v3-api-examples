@@ -7,17 +7,11 @@ use GuzzleHttp\Psr7\Request;
 
 // Replace the following values with your own
 $prodUrl = '<REPLACE_WITH_PROD_URL>';
-$token = '<REPLACE_WITH_YOUR_API_KEY>';
 
 $client = new Client();
-$headers = [
-    'Authorization' => 'Bearer ' . $token,
-    'Content-Type' => 'application/json'
-];
-$body = '{
-  "name": "My Sender"
-}';
-$request = new Request('POST', $prodUrl . '/v1/senders/create', $headers, $body);
+
+
+$request = new Request('GET', $prodUrl . '/v1/campaigns/emails/<YOUR_CAMPAIGN_ID>/status?token=<REPLACE_WITH_YOUR_API_KEY>');
 $res = $client->sendAsync($request)->wait();
 echo $res->getBody();
 

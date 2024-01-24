@@ -1,11 +1,10 @@
 string prodUrl = "<REPLACE_WITH_PROD_URL>";
-string token = "<YOUR_TOKEN>";
+string token = "<REPLACE_WITH_YOUR_API_KEY>";
 
-var client = new RestClient($"{prodUrl}/v1/campaigns/1/status");
+var client = new RestClient($"{prodUrl}/v1/campaigns/emails/<YOUR_CAMPAIGN_ID>/status?token={token}");
 client.Timeout = -1;
 
 var request = new RestRequest(Method.GET);
-request.AddHeader("Authorization", $"Bearer {token}");
 
 IRestResponse response = client.Execute(request);
 Console.WriteLine(response.Content);

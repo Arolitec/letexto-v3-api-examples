@@ -7,7 +7,7 @@ public class Main {
         OkHttpClient client = new OkHttpClient().newBuilder().build();
 
         Request request = new Request.Builder()
-                .url("<REPLACE_WITH_PROD_URL>/v1/message/<YOUR MESSAGE ID>/status?token=<YOUR TOKEN>")
+                .url("<REPLACE_WITH_PROD_URL>/v1/messages/<YOUR MESSAGE ID>/status?token=<REPLACE_WITH_YOUR_API_KEY>")
                 .method("GET", null)
                 .build();
 
