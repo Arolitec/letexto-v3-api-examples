@@ -1,8 +1,7 @@
 requete est une restRequête
-token est une chaîne
 
 requete.Méthode	= httpGet
-requete.URL		= "https://apis-test.letexto.com/v1/users/balance?token=" + token
+requete.URL		= "https://apis-test.letexto.com/v1/campaigns/sms/<CAMPAIGN_ID>/status?token=<REPLACE_WITH_YOUR_API_KEY>"
 requeteReponse est une restRéponse = RESTEnvoie(requete)
 
 SI ErreurDétectée ALORS
