@@ -4,25 +4,10 @@ import json
 url = "<REPLACE_WITH_PROD_URL>/v1/campaigns/emails"
 payload = json.dumps({
   "label": "My Campaign publipostage",
-  "sender": "SMS INFO",
-  "contacts": [
-    {
-      "age": "12",
-      "numero": "2250000000000",
-      "name": "Martial"
-    },
-    {
-      "age": "24",
-      "numero": "2250000000000",
-      "name": "Rita"
-    },
-    {
-      "age": "32",
-      "numero": "2250000000000",
-      "name": "John"
-    }
-  ],
-  "content": "Hello {{name}}, votre numéro est {{numero}}"
+    "from": "sender@mail.com",
+    "recipients": ["test1@mail.com", "test2@mail.com", "test3@mail.com"],
+    "content": "Hello {{name}}, votre numéro est {{numero}}",
+    "subject": "subject",
 })
 headers = {
   'Authorization': 'Bearer <REPLACE_WITH_YOUR_API_KEY>',
