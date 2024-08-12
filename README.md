@@ -2,27 +2,46 @@
 
 [Schema](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/postman/LeTexto%20Client%20API.postman_collection.json)
 
-### Send campaign
+### Send SMS campaign
 
-[C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/create_campaign.cs)
+[C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/create_sms_campaign.cs)
 
 [Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
-- [cURL](./php/curl/create_campaign.php)
-- [Guzzle](./php/guzzle/create_campaign.php)
 
-[Python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/create_campaign.py)
+- [cURL](./php/curl/create_sms_campaign.php)
+- [Guzzle](./php/guzzle/create_sms_campaign.php)
 
-[Javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/create_campaign.js)
+[Python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/create_sms_campaign.py)
 
-[Java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/create_campaign.java)
+[Javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/create_sms_campaign.js)
 
-[VB.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/create_campaign.vb)
+[Java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/create_sms_campaign.java)
+
+[VB.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/create_sms_campaign.vb)
+
+### Send EMAIL campaign
+
+[C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/create_email_campaign.cs)
+
+[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+
+- [cURL](./php/curl/create_email_campaign.php)
+- [Guzzle](./php/guzzle/create_email_campaign.php)
+
+[Python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/create_email_campaign.py)
+
+[Javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/create_email_campaign.js)
+
+[Java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/create_email_campaign.java)
+
+[VB.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/create_email_campaign.vb)
 
 ### Send single message
 
 [C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/send_single_message.cs)
 
 [Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+
 - [cURL](./php/curl/send_single_message.php)
 - [Guzzle](./php/guzzle/send_single_message.php)
 
@@ -39,6 +58,7 @@
 [C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/get_campaign_status.cs)
 
 [Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+
 - [cURL](./php/curl/get_campaign_status.php)
 - [Guzzle](./php/guzzle/get_campaign_status.php)
 
@@ -55,6 +75,7 @@
 [C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/get_message_status.cs)
 
 [Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+
 - [cURL](./php/curl/get_message_status.php)
 - [Guzzle](./php/guzzle/get_message_status.php
 
@@ -71,6 +92,7 @@
 [C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/create_sender.cs)
 
 [Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+
 - [cURL](./php/curl/create_sender.php)
 - [Guzzle](./php/guzzle/create_sender.php)
 
@@ -87,6 +109,7 @@
 [C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/get_balance.cs)
 
 [Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+
 - [cURL](./php/curl/get_balance.php)
 - [Guzzle](./php/guzzle/get_balance.php)
 

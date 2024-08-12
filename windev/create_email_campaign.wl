@@ -9,19 +9,10 @@ requete.Entête["Authorization"] = "Bearer " + token
 body est une chaîne = [
 	{
 	"label": "My Campaign",
-	"sender": "SOSSO",
+    "from": "sender@mail.com",
+    "recipients": ["test@mail.com", "test@mail.com", "test@mail.com"],
+    "subject": "subject",
 	"content": "Hello",
-	"contacts": [
-		{
-            "age": "12",
-            "numero": "2250000000000",
-            "name": "Joel"
-		},
-		{
-            "age": "24",
-            "numero": "2250000000000",
-            "name": "Ladji"
-		}]
 	}
 ]
 
