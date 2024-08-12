@@ -12,10 +12,8 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:3333/v1/messages/send?from=SMS INFO&to=2250000000000&content=Hello API!&token=a12yhu5847ejuell458222ed&dlrUrl=https://mydomain.com:4444/dlr&dlrMethod=GET&customData=customData&sendAt=2023-02-13T21:40:00.000Z",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
+          "raw": "https://apis.letexto.com/v1/messages/send?from=SMS INFO&to=2250000000000&content=Hello API!&token=a12yhu5847ejuell458222ed&dlrUrl=https://mydomain.com:4444/dlr&dlrMethod=GET&customData=customData&sendAt=2023-02-13T21:40:00.000Z",
+          "protocol": "https",
           "path": ["v1", "messages", "send"],
           "query": [
             {
@@ -80,10 +78,8 @@
           }
         },
         "url": {
-          "raw": "http://localhost:3333/v1/campaigns/sms",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
+          "raw": "https://apis.letexto.com/v1/campaigns/sms",
+          "protocol": "https",
           "path": ["v1", "campaigns", "sms"]
         }
       },
@@ -119,10 +115,8 @@
           }
         },
         "url": {
-          "raw": "http://localhost:3333/v1/campaigns/emails",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
+          "raw": "https://apis.letexto.com/v1/campaigns/emails",
+          "protocol": "https",
           "path": ["v1", "campaigns", "emails"]
         }
       },
@@ -134,33 +128,24 @@
         "disableBodyPruning": true
       },
       "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "dc408be00542eed70f4e7d1336d9a38735e5fa74",
-              "type": "string"
-            }
-          ]
-        },
         "method": "GET",
         "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"label\": \"My Campaign 3\",\n    \"sender\": \"user 3TEC\",\n    \"contacts\": [\n        {\"age\": \"12\", \"numero\": \"2250000000000\", \"name\": \"user 1\"},\n        {\"age\": \"24\", \"numero\": \"2250000000000\", \"name\": \"user 2\"},\n        {\"age\": \"32\", \"numero\": \"2250000000000\", \"name\": \"user 3tec\"}\n    ],\n    \"content\": \"Hello {{name}}, votre numéro est {{numero}}\"\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
+        "body": {},
+        "param": [
+          {
+            "id": "campaign_id"
           }
-        },
+        ],
         "url": {
-          "raw": "http://localhost:3333/v1/campaigns/1/status",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
-          "path": ["v1", "campaigns", "1", "status"]
+          "raw": "https://apis.letexto.com/v1/campaigns/sms/:id/status?token=dc408be00542eed70f4e7d1336d9a38735e5fa74",
+          "protocol": "https",
+          "path": ["v1", "campaigns", "sms", ":id", "status"],
+          "query": [
+            {
+              "key": "token",
+              "value": "a12yhu5847ejuell458222ed"
+            }
+          ]
         }
       },
       "response": []
@@ -193,10 +178,8 @@
           }
         },
         "url": {
-          "raw": "http://localhost:3333/v1/senders/create",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
+          "raw": "https://apis.letexto.com/v1/senders/create",
+          "protocol": "https",
           "path": ["v1", "senders", "create"]
         }
       },
@@ -208,25 +191,19 @@
         "disableBodyPruning": true
       },
       "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "dc408be00542eed70f4e7d1336d9a38735e5fa74",
-              "type": "string"
-            }
-          ]
-        },
         "method": "POST",
         "header": [],
         "body": {},
         "url": {
-          "raw": "http://localhost:3333/v1/users/balance",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
-          "path": ["v1", "users", "balance"]
+          "raw": "https://apis.letexto.com/v1/users/balance?token=dc408be00542eed70f4e7d1336d9a38735e5fa74",
+          "protocol": "https",
+          "path": ["v1", "users", "balance"],
+          "query": [
+            {
+              "key": "token",
+              "value": "dc408be00542eed70f4e7d1336d9a38735e5fa74"
+            }
+          ]
         }
       },
       "response": []
@@ -237,16 +214,6 @@
         "disableBodyPruning": true
       },
       "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "dc408be00542eed70f4e7d1336d9a38735e5fa74",
-              "type": "string"
-            }
-          ]
-        },
         "method": "POST",
         "header": [],
         "body": {},
@@ -256,11 +223,15 @@
           }
         ],
         "url": {
-          "raw": "http://localhost:3333/v1/messages/:id/status",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
-          "path": ["v1", "messages", ":id", "status"]
+          "raw": "https://apis.letexto.com/v1/messages/:id/status",
+          "protocol": "https",
+          "path": ["v1", "messages", ":id", "status"],
+          "query": [
+            {
+              "key": "token",
+              "value": "dc408be00542eed70f4e7d1336d9a38735e5fa74"
+            }
+          ]
         }
       },
       "response": []
