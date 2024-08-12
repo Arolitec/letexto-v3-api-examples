@@ -13,9 +13,7 @@
         "header": [],
         "url": {
           "raw": "https://apis.letexto.com/v1/messages/send?from=SMS INFO&to=2250000000000&content=Hello API!&token=a12yhu5847ejuell458222ed&dlrUrl=https://mydomain.com:4444/dlr&dlrMethod=GET&customData=customData&sendAt=2023-02-13T21:40:00.000Z",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
+          "protocol": "https",
           "path": ["v1", "messages", "send"],
           "query": [
             {
@@ -81,9 +79,7 @@
         },
         "url": {
           "raw": "https://apis.letexto.com/v1/campaigns/sms",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
+          "protocol": "https",
           "path": ["v1", "campaigns", "sms"]
         }
       },
@@ -119,10 +115,8 @@
           }
         },
         "url": {
-          "raw": "http://localhost:3333/v1/campaigns/emails",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
+          "raw": "https://apis.letexto.com/v1/campaigns/emails",
+          "protocol": "https",
           "path": ["v1", "campaigns", "emails"]
         }
       },
@@ -144,9 +138,7 @@
         ],
         "url": {
           "raw": "https://apis.letexto.com/v1/campaigns/sms/:id/status?token=dc408be00542eed70f4e7d1336d9a38735e5fa74",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
+          "protocol": "https",
           "path": ["v1", "campaigns", "sms", ":id", "status"],
           "query": [
             {
@@ -187,9 +179,7 @@
         },
         "url": {
           "raw": "https://apis.letexto.com/v1/senders/create",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
+          "protocol": "https",
           "path": ["v1", "senders", "create"]
         }
       },
@@ -206,9 +196,7 @@
         "body": {},
         "url": {
           "raw": "https://apis.letexto.com/v1/users/balance?token=dc408be00542eed70f4e7d1336d9a38735e5fa74",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
+          "protocol": "https",
           "path": ["v1", "users", "balance"],
           "query": [
             {
@@ -236,9 +224,7 @@
         ],
         "url": {
           "raw": "https://apis.letexto.com/v1/messages/:id/status",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "3333",
+          "protocol": "https",
           "path": ["v1", "messages", ":id", "status"],
           "query": [
             {
