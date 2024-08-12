@@ -56,7 +56,7 @@
       "response": []
     },
     {
-      "name": "Create Campaign",
+      "name": "Create SMS Campaign",
       "request": {
         "auth": {
           "type": "bearer",
@@ -85,6 +85,45 @@
           "host": ["localhost"],
           "port": "3333",
           "path": ["v1", "campaigns", "sms"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Email Campaign",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "dc408be00542eed70f4e7d1336d9a38735e5fa74",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"label\": \"My Campaign publipostage\",\n    \"from\": \"sender@mail.com\",\n    \"recipients\": [\"test@mail.com\", \"test@mail.com\", \"test@mail.com\"],\n    \"content\": \"Hello {{name}}, votre numéro est {{numero}}\",\n    \"subject\": \"subject\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3333/v1/campaigns/emails",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3333",
+          "path": ["v1", "campaigns", "emails"]
         }
       },
       "response": []
