@@ -235,6 +235,46 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "Get Senders",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "dc408be00542eed70f4e7d1336d9a38735e5fa74",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://apis.letexto.com/v1/senders?query=searchTerm&status=PENDING&allAccounts=true",
+          "protocol": "https",
+          "path": ["v1", "senders"],
+          "query": [
+            {
+              "key": "query",
+              "value": "searchTerm",
+              "description": "Optional search term"
+            },
+            {
+              "key": "status",
+              "value": "PENDING",
+              "description": "Optional sender status filter"
+            },
+            {
+              "key": "allAccounts",
+              "value": "true",
+              "description": "Optional boolean to include all accounts"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ]
 }
