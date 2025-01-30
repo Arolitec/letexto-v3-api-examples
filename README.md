@@ -104,6 +104,23 @@
 
 [VB.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/create_sender.vb)
 
+### Get senders
+
+[C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/get-sender.cs)
+
+[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+
+- [cURL](./php/curl/get-senders.php)
+- [Guzzle](./php/guzzle/get-senders.php)
+
+[Python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/get-senders.py)
+
+[Javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/get-senders.js)
+
+[Java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/get-senders.java)
+
+[VB.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/get-senders.vb)
+
 ### Get balance
 
 [C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/get_balance.cs)
