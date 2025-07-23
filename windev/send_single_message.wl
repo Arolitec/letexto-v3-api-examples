@@ -1,10 +1,26 @@
 requete est une restRequête
 
-requete.URL="<REPLACE_WITH_PROD_URL>/messages/send?from=SOSSO&to=2250000000000&content=Hello+API%21&token=<REPLACE_WITH_YOUR_API_KEY>&dlrUrl=https%3A%2F%2Fmydomain.com%3A4444%2Fdlr&dlrMethod=GET&customData=customData&sendAt=2023-02-13T21%3A40%3A00.000Z"
+requete.Méthode = restMéthodePOST
+requete.URL = "<REPLACE_WITH_PROD_URL>/v1/messages/send"
+requete.AjouteEnTête("Authorization", "Bearer <REPLACE_WITH_YOUR_API_KEY>")
+requete.AjouteEnTête("Content-Type", "application/json")
+
+corpsJSON est une chaîne = [
+    "from": "SOSSO",
+    "to": "2250000000000",
+    "content": "Hello API!",
+    "dlrUrl": "https://mydomain.com:4444/dlr",
+    "dlrMethod": "GET",
+    "customData": "customData",
+    "sendAt": "2023-02-13T21:40:00.000Z"
+]
+
+requete.AjouteCorps(corpsJSON, restFormatJSON)
+
 requeteReponse est une restRéponse = RESTEnvoie(requete)
 
 SI ErreurDétectée ALORS
-	ErreurInfo(errComplet)
+    ErreurInfo(errComplet)
 SINON
-	Info(requeteReponse.Contenu)
+    Info(requeteReponse.Contenu)
 FIN

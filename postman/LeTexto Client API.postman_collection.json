@@ -9,46 +9,33 @@
     {
       "name": "Send single Message",
       "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "https://apis.letexto.com/v1/messages/send?from=SMS INFO&to=2250000000000&content=Hello API!&token=a12yhu5847ejuell458222ed&dlrUrl=https://mydomain.com:4444/dlr&dlrMethod=GET&customData=customData&sendAt=2023-02-13T21:40:00.000Z",
-          "protocol": "https",
-          "path": ["v1", "messages", "send"],
-          "query": [
-            {
-              "key": "from",
-              "value": "SMS INFO"
-            },
-            {
-              "key": "to",
-              "value": "2250000000000"
-            },
-            {
-              "key": "content",
-              "value": "Hello API!"
-            },
-            {
-              "key": "token",
-              "value": "a12yhu5847ejuell458222ed"
-            },
-            {
-              "key": "dlrUrl",
-              "value": "https://mydomain.com:4444/dlr"
-            },
-            {
-              "key": "dlrMethod",
-              "value": "GET"
-            },
-            {
-              "key": "customData",
-              "value": "customData"
-            },
-            {
-              "key": "sendAt",
-              "value": "2023-02-13T21:40:00.000Z"
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer a12yhu5847ejuell458222ed",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"from\": \"SMS INFO\",\n  \"to\": \"2250000000000\",\n  \"content\": \"Hello API!\",\n  \"dlrUrl\": \"https://mydomain.com:4444/dlr\",\n  \"dlrMethod\": \"GET\",\n  \"customData\": \"customData\",\n  \"sendAt\": \"2023-02-13T21:40:00.000Z\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
             }
-          ]
+          }
+        },
+        "url": {
+          "raw": "https://apis.letexto.com/v1/messages/send",
+          "protocol": "https",
+          "host": ["apis", "letexto", "com"],
+          "path": ["v1", "messages", "send"]
         }
       },
       "response": []

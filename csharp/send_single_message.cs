@@ -1,25 +1,36 @@
-string apiUrl = "<REPLACE_WITH_PROD_URL>/v1/messages/send";
-string from = "SMS INFO";
-string to = "22500000000000";
-string content = "Hello API!";
-string token = "<REPLACE_WITH_YOUR_API_KEY>";
-string dlrUrl = "https://mydomain.com:4444/dlr";
-string dlrMethod = "GET";
-string customData = "customData";
-string sendAt = "2023-02-13T21:40:00.000Z";
+using System;
+using System.Net.Http;
+using System.Text;
+using System.Text.Json;
+using System.Threading.Tasks;
 
-var client = new RestClient(apiUrl);
-client.Timeout = -1;
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        string apiUrl = "<REPLACE_WITH_PROD_URL>/v1/messages/send";
+        string token = "<REPLACE_WITH_YOUR_API_KEY>";
 
-var request = new RestRequest(Method.GET);
-request.AddParameter("from", from);
-request.AddParameter("to", to);
-request.AddParameter("content", content);
-request.AddParameter("token", token);
-request.AddParameter("dlrUrl", dlrUrl);
-request.AddParameter("dlrMethod", dlrMethod);
-request.AddParameter("customData", customData);
-request.AddParameter("sendAt", sendAt);
+        var httpClient = new HttpClient();
+        httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
 
-IRestResponse response = client.Execute(request);
-Console.WriteLine(response.Content);
+        var requestData = new
+        {
+            from = "SMS INFO",
+            to = "2250000000000",
+            content = "Hello API!",
+            dlrUrl = "https://mydomain.com:4444/dlr",
+            dlrMethod = "GET",
+            customData = "customData",
+            sendAt = "2023-02-13T21:40:00.000Z"
+        };
+
+        var json = JsonSerializer.Serialize(requestData);
+        var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+        var response = await httpClient.PostAsync(apiUrl, content);
+        var responseBody = await response.Content.ReadAsStringAsync();
+
+        Console.WriteLine(responseBody);
+    }
+}
