@@ -36,6 +36,57 @@
 
 [VB.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/create_email_campaign.vb)
 
+### Send WhatsApp message
+
+[C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/send_whatsapp_message.cs)
+
+[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+
+- [cURL](./php/curl/send_whatsapp_message.php)
+- [Guzzle](./php/guzzle/send_whatsapp_message.php)
+
+[Python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/send_whatsapp_message.py)
+
+[Javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/send_whatsapp_message.js)
+
+[Java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/send_whatsapp_message.java)
+
+[VB.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/send_whatsapp_message.vb)
+
+### Send WhatsApp campaign
+
+[C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/create_whatsapp_campaign.cs)
+
+[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+
+- [cURL](./php/curl/create_whatsapp_campaign.php)
+- [Guzzle](./php/guzzle/create_whatsapp_campaign.php)
+
+[Python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/create_whatsapp_campaign.py)
+
+[Javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/create_whatsapp_campaign.js)
+
+[Java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/create_whatsapp_campaign.java)
+
+[VB.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/create_whatsapp_campaign.vb)
+
+### Get WhatsApp campaign status
+
+[C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/get_whatsapp_campaign_status.cs)
+
+[Php](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/php)
+
+- [cURL](./php/curl/get_whatsapp_campaign_status.php)
+- [Guzzle](./php/guzzle/get_whatsapp_campaign_status.php)
+
+[Python](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/python/get_whatsapp_campaign_status.py)
+
+[Javascript](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/js/get_whatsapp_campaign_status.js)
+
+[Java](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/java/get_whatsapp_campaign_status.java)
+
+[VB.net](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/vb.net/get_whatsapp_campaign_status.vb)
+
 ### Send single message
 
 [C#](https://github.com/Arolitec/letexto-v3-api-examples/blob/main/csharp/send_single_message.cs)

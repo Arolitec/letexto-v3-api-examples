@@ -34,8 +34,16 @@
         "url": {
           "raw": "https://apis.letexto.com/v1/messages/send",
           "protocol": "https",
-          "host": ["apis", "letexto", "com"],
-          "path": ["v1", "messages", "send"]
+          "host": [
+            "apis",
+            "letexto",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "messages",
+            "send"
+          ]
         }
       },
       "response": []
@@ -67,7 +75,11 @@
         "url": {
           "raw": "https://apis.letexto.com/v1/campaigns/sms",
           "protocol": "https",
-          "path": ["v1", "campaigns", "sms"]
+          "path": [
+            "v1",
+            "campaigns",
+            "sms"
+          ]
         }
       },
       "response": []
@@ -104,7 +116,133 @@
         "url": {
           "raw": "https://apis.letexto.com/v1/campaigns/emails",
           "protocol": "https",
-          "path": ["v1", "campaigns", "emails"]
+          "path": [
+            "v1",
+            "campaigns",
+            "emails"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Send WhatsApp Message",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "dc408be00542eed70f4e7d1336d9a38735e5fa74",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"from\": \"My Company\",\n    \"to\": \"2250000000000\",\n    \"templateName\": \"order_confirmation\",\n    \"parameters\": [\n        \"John\",\n        \"12345\"\n    ],\n    \"mediaUrl\": \"https://mydomain.com/image.jpg\",\n    \"notifyUrl\": \"https://mydomain.com:4444/dlr\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://apis.letexto.com/v1/whatsapp/send",
+          "protocol": "https",
+          "host": [
+            "apis",
+            "letexto",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "whatsapp",
+            "send"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create WhatsApp Campaign",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "dc408be00542eed70f4e7d1336d9a38735e5fa74",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"label\": \"My WhatsApp Campaign\",\n    \"sender\": \"My Company\",\n    \"templateName\": \"order_confirmation\",\n    \"contacts\": [\n        \"2250000000000\",\n        \"2250000000001\",\n        \"2250000000002\"\n    ],\n    \"parameters\": [\n        \"John\",\n        \"12345\"\n    ],\n    \"mediaUrl\": \"https://mydomain.com/image.jpg\",\n    \"notifyUrl\": \"https://mydomain.com:4444/dlr\",\n    \"skipDuplicates\": true,\n    \"sendAt\": \"2026-07-20T21:40:00.000Z\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://apis.letexto.com/v1/campaigns/whatsapp",
+          "protocol": "https",
+          "host": [
+            "apis",
+            "letexto",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "campaigns",
+            "whatsapp"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get WhatsApp Campaign Status",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "https://apis.letexto.com/v1/campaigns/whatsapp/:id/status?token=dc408be00542eed70f4e7d1336d9a38735e5fa74",
+          "protocol": "https",
+          "host": [
+            "apis",
+            "letexto",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "campaigns",
+            "whatsapp",
+            ":id",
+            "status"
+          ],
+          "query": [
+            {
+              "key": "token",
+              "value": "dc408be00542eed70f4e7d1336d9a38735e5fa74"
+            }
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": ""
+            }
+          ]
         }
       },
       "response": []
@@ -126,7 +264,13 @@
         "url": {
           "raw": "https://apis.letexto.com/v1/campaigns/sms/:id/status?token=dc408be00542eed70f4e7d1336d9a38735e5fa74",
           "protocol": "https",
-          "path": ["v1", "campaigns", "sms", ":id", "status"],
+          "path": [
+            "v1",
+            "campaigns",
+            "sms",
+            ":id",
+            "status"
+          ],
           "query": [
             {
               "key": "token",
@@ -167,7 +311,11 @@
         "url": {
           "raw": "https://apis.letexto.com/v1/senders/create",
           "protocol": "https",
-          "path": ["v1", "senders", "create"]
+          "path": [
+            "v1",
+            "senders",
+            "create"
+          ]
         }
       },
       "response": []
@@ -184,7 +332,11 @@
         "url": {
           "raw": "https://apis.letexto.com/v1/users/balance?token=dc408be00542eed70f4e7d1336d9a38735e5fa74",
           "protocol": "https",
-          "path": ["v1", "users", "balance"],
+          "path": [
+            "v1",
+            "users",
+            "balance"
+          ],
           "query": [
             {
               "key": "token",
@@ -212,7 +364,12 @@
         "url": {
           "raw": "https://apis.letexto.com/v1/messages/:id/status",
           "protocol": "https",
-          "path": ["v1", "messages", ":id", "status"],
+          "path": [
+            "v1",
+            "messages",
+            ":id",
+            "status"
+          ],
           "query": [
             {
               "key": "token",
@@ -241,7 +398,10 @@
         "url": {
           "raw": "https://apis.letexto.com/v1/senders?query=searchTerm&status=PENDING&allAccounts=true",
           "protocol": "https",
-          "path": ["v1", "senders"],
+          "path": [
+            "v1",
+            "senders"
+          ],
           "query": [
             {
               "key": "query",
